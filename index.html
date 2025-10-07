@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUB LIGHT PRO - Профессиональное световое оборудование</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>CLUBLIGHT PRO</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link" data-page="home">ГЛАВНАЯ</a></li>
+                        <li><a href="#" class="nav-link" data-page="products">ТОВАРЫ</a></li>
+                        <li><a href="#" class="nav-link" data-page="simulator">СИМУЛЯТОР</a></li>
+                        <li><a href="#" class="nav-link" data-page="contact">КОНТАКТЫ</a></li>
+                        <li><a href="#" class="nav-link" data-page="support">ПОДДЕРЖКА</a></li>
+                        <li><a href="#" class="nav-link" data-page="about">О НАС</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="btn-secondary">АККАУНТ</button>
+                    <button class="btn-primary" data-page="products">КУПИТЬ СЕЙЧАС</button>
+                    <button class="cart-btn" id="cartBtn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="#" class="mobile-nav-link" data-page="home">ГЛАВНАЯ</a></li>
+                    <li><a href="#" class="mobile-nav-link" data-page="products">ТОВАРЫ</a></li>
+                    <li><a href="#" class="mobile-nav-link" data-page="simulator">СИМУЛЯТОР</a></li>
+                    <li><a href="#" class="mobile-nav-link" data-page="contact">КОНТАКТЫ</a></li>
+                    <li><a href="#" class="mobile-nav-link" data-page="support">ПОДДЕРЖКА</a></li>
+                    <li><a href="#" class="mobile-nav-link" data-page="about">О НАС</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <div class="club-scene">
+                    <div class="stage">
+                        <div class="dj-booth"></div>
+                        <div class="disco-balls">
+                            <div class="disco-ball left"></div>
+                            <div class="disco-ball right"></div>
+                        </div>
+                        <div class="light-beams">
+                            <div class="beam beam-1"></div>
+                            <div class="beam beam-2"></div>
+                            <div class="beam beam-3"></div>
+                            <div class="beam beam-4"></div>
+                        </div>
+                    </div>
+                    <div class="speakers">
+                        <div class="speaker left"></div>
+                        <div class="speaker right"></div>
+                    </div>
+                    <div class="crowd-silhouettes"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="hero-title">CLUB LIGHT PRO</h1>
+                    <p class="hero-subtitle">ПРЕОБРАЗИТЕ ВАШ КЛУБ С ПОМОЩЬЮ ЯРКИХ ЭФФЕКТОВ</p>
+                    <p class="hero-description">
+                        Профессиональное световое оборудование для незабываемого клубного опыта.
+                        Создавайте потрясающие визуальные эффекты, которые поразят вашу аудиторию.
+                    </p>
+                    <button class="btn-hero" data-page="products">КУПИТЬ СЕЙЧАС</button>
+                </div>
+            </div>
+        </section>
+        <!-- Products Section -->
+        <section class="products">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="moving-head">
+                                <div class="head-body"></div>
+                                <div class="light-beam blue"></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ПОДВИЖНЫЕ ГОЛОВКИ СВЕТОДИОДОВ</h3>
+                            <p class="product-description">
+                                Профессиональные подвижные головки со светодиодами с мощными лучевыми эффектами.
+                                Идеально подходят для создания динамических световых шоу.
+                            </p>
+                            <div class="product-price">299$</div>
+                            <button class="btn-product pink" data-product="led-moving-head-1" data-price="299">ДОБАВИТЬ В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="moving-head">
+                                <div class="head-body"></div>
+                                <div class="light-beam pink"></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ПОДВИЖНЫЕ ГОЛОВКИ СВЕТОДИОДОВ</h3>
+                            <p class="product-description">
+                                Высокопроизводительные подвижные головки со светодиодами с расширенными функциями управления.
+                                Создавайте потрясающие световые шоу с легкостью.
+                            </p>
+                            <div class="product-price">399$</div>
+                            <button class="btn-product blue" data-product="led-moving-head-2" data-price="399">ДОБАВИТЬ В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="laser-projector">
+                                <div class="projector-body"></div>
+                                <div class="laser-beam"></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ЛАЗЕРНЫЕ ПРОЕКТОРЫ</h3>
+                            <p class="product-description">
+                                Профессиональные лазерные проекторы для потрясающих визуальных эффектов.
+                                Создавайте завораживающие лазерные шоу, которые покорят вашу аудиторию.
+                            </p>
+                            <div class="product-price">599$</div>
+                            <button class="btn-product pink" data-product="laser-projector" data-price="599">ДОБАВИТЬ В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="disco-ball-product">
+                                <div class="ball-surface"></div>
+                                <div class="reflections"></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ДИСКО-ШАРЫ</h3>
+                            <p class="product-description">
+                                Классические диско-шары с современной светодиодной технологией.
+                                Добавьте ретро-очарование в ваш клуб с современной производительностью.
+                            </p>
+                            <div class="product-price">199$</div>
+                            <button class="btn-product pink" data-product="disco-ball" data-price="199">ДОБАВИТЬ В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Products Page -->
+    <div id="products" class="page">
+        <section class="products">
+            <div class="container">
+                <h2 class="section-title">Наши товары</h2>
+                <div class="products-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="moving-head">
+                                <div class="head-body"></div>
+                                <div class="light-beam blue"></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ПОДВИЖНЫЕ ГОЛОВКИ СВЕТОДИОДОВ</h3>
+                            <p class="product-description">
+                                Профессиональные подвижные головки со светодиодами с мощными лучевыми эффектами.
+                                Идеально подходят для создания динамических световых шоу.
+                            </p>
+                            <div class="product-price">299$</div>
+                            <button class="btn-product pink" data-product="led-moving-head-1" data-price="299">ДОБАВИТЬ В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="moving-head">
+                                <div class="head-body"></div>
+                                <div class="light-beam pink"></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ПОДВИЖНЫЕ ГОЛОВКИ СВЕТОДИОДОВ</h3>
+                            <p class="product-description">
+                                Высокопроизводительные подвижные головки со светодиодами с расширенными функциями управления.
+                                Создавайте потрясающие световые шоу с легкостью.
+                            </p>
+                            <div class="product-price">399$</div>
+                            <button class="btn-product blue" data-product="led-moving-head-2" data-price="399">ДОБАВИТЬ В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="laser-projector">
+                                <div class="projector-body"></div>
+                                <div class="laser-beam"></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ЛАЗЕРНЫЕ ПРОЕКТОРЫ</h3>
+                            <p class="product-description">
+                                Профессиональные лазерные проекторы для потрясающих визуальных эффектов.
+                                Создавайте завораживающие лазерные шоу, которые покорят вашу аудиторию.
+                            </p>
+                            <div class="product-price">599$</div>
+                            <button class="btn-product pink" data-product="laser-projector" data-price="599">ДОБАВИТЬ В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="disco-ball-product">
+                                <div class="ball-surface"></div>
+                                <div class="reflections"></div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ДИСКО-ШАРЫ</h3>
+                            <p class="product-description">
+                                Классические диско-шары с современной светодиодной технологией.
+                                Добавьте ретро-очарование в ваш клуб с современной производительностью.
+                            </p>
+                            <div class="product-price">199$</div>
+                            <button class="btn-product pink" data-product="disco-ball" data-price="199">ДОБАВИТЬ В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- About Page -->
+    <div id="about" class="page">
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="about-title">О CLUB LIGHT PRO</h2>
+                    <p class="about-text">
+                        Мы являемся ведущим поставщиком профессионального светового оборудования для клубов,
+                        мероприятий и развлекательных заведений. Более 10 лет мы помогаем создавать
+                        незабываемые впечатления с помощью передовых технологий освещения.
+                    </p>
+                    <p class="about-text">
+                        Наша команда экспертов стремится предоставлять продукцию высочайшего качества
+                        и исключительный сервис для клиентов. От небольших клубов до крупных фестивалей —
+                        у нас есть идеальные решения для освещения любого заведения.
+                    </p>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <h3>Alex Johnson</h3>
+                            <p>Генеральный директор и основатель</p>
+                            <p>Более 15 лет в индустрии освещения</p>
+                        </div>
+                        <div class="team-member">
+                            <h3>Sarah Chen</h3>
+                            <p>Технический директор</p>
+                            <p>Эксперт в области светодиодных технологий</p>
+                        </div>
+                        <div class="team-member">
+                            <h3>Mike Rodriguez</h3>
+                            <p>Менеджер по продажам</p>
+                            <p>Специалист по удовлетворению клиентов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <section class="contact">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Имя</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Тема</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Сообщение</label>
+                            <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Support Page -->
+    <div id="support" class="page">
+        <section class="support">
+            <div class="container">
+                <h2 class="section-title">Поддержка и ЧаВо</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">Как выбрать правильное световое оборудование?</div>
+                        <div class="faq-answer">
+                            Учитывайте размер вашего помещения, высоту потолков и тип мероприятий, которые вы проводите.
+                            Наша команда поможет вам выбрать идеальное оборудование для ваших потребностей.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Вы предлагаете услуги по установке?</div>
+                        <div class="faq-answer">
+                            Да, мы предоставляем профессиональные услуги по установке для всех наших продуктов.
+                            Наши сертифицированные техники обеспечивают правильную настройку и конфигурацию.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Какова ваша гарантийная политика?</div>
+                        <div class="faq-answer">
+                            Все наши продукты имеют 2-летнюю гарантию производителя.
+                            Мы также предлагаем расширенные варианты гарантии для дополнительного покрытия.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Могу ли я получить техническую поддержку?</div>
+                        <div class="faq-answer">
+                            Абсолютно! Наша команда технической поддержки доступна 24/7, чтобы помочь
+                            с любыми вопросами или проблемами, связанными с вашим световым оборудованием.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Lighting Simulator Page -->
+    <div id="simulator" class="page">
+        <section class="lighting-simulator">
+            <div class="simulator-container">
+                <h2 class="simulator-title">Профессиональный симулятор освещения</h2>
+                <p class="simulator-subtitle">Испытайте мощь профессионального клубного освещения</p>
+                <div class="device-selector">
+                    <button class="device-btn active" data-device="moving-head">Подвижная головка</button>
+                    <button class="device-btn" data-device="laser">Лазерный проектор</button>
+                    <button class="device-btn" data-device="strobe">Стробоскоп</button>
+                    <button class="device-btn" data-device="disco-ball">Диско-шар</button>
+                    <button class="device-btn" data-device="led-panel">LED панель</button>
+                </div>
+                <div class="simulator-content">
+                    <div class="controls-panel">
+                        <div class="control-group">
+                            <label class="control-label">Интенсивность: <span id="intensityValue">50%</span></label>
+                            <input type="range" class="control-slider" id="intensity" min="0" max="100" value="50">
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Цвет</label>
+                            <input type="color" class="color-picker" id="color" value="#ff0096">
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Ширина луча: <span id="beamWidthValue">50%</span></label>
+                            <input type="range" class="control-slider" id="beamWidth" min="10" max="100" value="50">
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Скорость: <span id="speedValue">30%</span></label>
+                            <input type="range" class="control-slider" id="speed" min="0" max="100" value="30">
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Паттерн</label>
+                            <select class="pattern-select" id="pattern">
+                                <option value="static">Статический</option>
+                                <option value="circle">Круг</option>
+                                <option value="figure8">Фигура 8</option>
+                                <option value="random">Случайный</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Частота строба: <span id="strobeValue">50%</span></label>
+                            <input type="range" class="control-slider" id="strobe" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                    <div class="light-preview">
+                        <div class="club-environment">
+                            <div class="dance-floor"></div>
+                            <div class="stage-area"></div>
+                            <div class="light-source" id="lightSource"></div>
+                            <div class="light-beam" id="lightBeam"></div>
+                            <div class="light-effects" id="lightEffects"></div>
+                        </div>
+                        <div class="light-info">
+                            <div class="light-intensity" id="intensityDisplay">50%</div>
+                            <div class="light-color" id="colorDisplay">#ff0096</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-overlay"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Корзина</h3>
+                <button class="cart-close" id="cartClose">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Итого: $<span id="cartTotal">0</span></strong>
+                </div>
+                <button class="btn-primary cart-checkout">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h2>CLUB LIGHT PRO</h2>
+                        <p>Профессиональные решения для освещения клубов и мероприятий</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="home">Главная</a></li>
+                        <li><a href="#" data-page="products">Товары</a></li>
+                        <li><a href="#" data-page="simulator">Симулятор</a></li>
+                        <li><a href="#" data-page="about">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Поддержка</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="support">Центр помощи</a></li>
+                        <li><a href="#" data-page="contact">Свяжитесь с нами</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Установка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Связаться</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-btn facebook">📘 Facebook</a>
+                        <a href="#" class="social-btn instagram">📷 Instagram</a>
+                        <a href="#" class="social-btn youtube">📺 YouTube</a>
+                        <a href="#" class="social-btn twitter">🐦 Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Рассылка</h3>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Введите ваш email" class="newsletter-input">
+                        <button class="newsletter-btn">Подписаться</button>
+                    </div>
+                    <p class="newsletter-text">Получайте последние советы по освещению и обновления продуктов</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 CLUB LIGHT PRO. Все права защищены.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Условия использования</a>
+                        <a href="#">Политика использования файлов cookie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
